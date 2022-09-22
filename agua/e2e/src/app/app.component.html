@@ -1,0 +1,21 @@
+<ion-app>
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-title>Menu</ion-title>
+        <ion-icon slot="end" name="close" size="large" class="ion-padding" (click)="cerrar()"></ion-icon>
+      </ion-toolbar>
+      
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item routerLink="/home" (click)="cerrar()" detail>Home</ion-item>
+        <ion-item routerLink="/cards" (click)="cerrar()" detail>Cards</ion-item>
+        <ion-item routerLink="/listas" (click)="cerrar()" detail>Listas</ion-item>
+ 
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

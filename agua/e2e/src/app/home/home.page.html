@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-button (click)="abrirMenu()">
+        <ion-icon slot="start" name="menu"></ion-icon>
+
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+    <ion-text slot="end">
+      <p>{{username || 'Anónimo'}}</p>
+    </ion-text>
+    <ion-icon slot="end" name="person-circle-outline" class="ion-padding" size="large"></ion-icon>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-text color="primary" class="ion-text-center">
+    <h1>Bienvenido</h1>
+  </ion-text>
+  <ion-img src="/assets/auto.jpg"></ion-img>
+  
+</ion-content>
